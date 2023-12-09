@@ -42,9 +42,15 @@ const markup = images
   .map(
     ({ url, alt }) => `
   <li class="gallery-item">
-    <img src="${url}" class="gallery-img" alt="${alt}" />
+    <img src='${url}' class=" gallery-img" alt='${alt}' width = "50%"/>
   </li>
   `
   )
   .join("");
+
 galleryList.insertAdjacentHTML("afterbegin", markup);
+
+galleryList.style.listStyleType = "none";
+galleryList.style.display = "flex";
+galleryList.style.flexDirection = "column";
+galleryList.style.gap = "24px";
