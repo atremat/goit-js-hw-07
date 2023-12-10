@@ -27,7 +27,6 @@
 полів форми методом reset.
 */
 const loginForm = document.querySelector(".login-form");
-// const input = document.querySelector();
 
 loginForm.addEventListener("submit", handleSubmit);
 
