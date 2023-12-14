@@ -3,6 +3,6 @@ console.log(`Number of categories: ${items.length}`);
 for (const item of items) {
   const headingText = item.querySelector("h2").textContent;
   console.log(`Category: ${headingText}`);
-  const liItems = item.querySelectorAll("li");
+  const liItems = item.querySelectorAll("ul>li");
   console.log(`Elements: ${liItems.length}`);
 }
